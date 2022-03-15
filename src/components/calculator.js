@@ -125,7 +125,7 @@ const Calculator = () => {
                     display("/");
                   }}
                 >
-                  /
+                  &#247;
                 </button>
               </td>
             </tr>
@@ -243,17 +243,29 @@ const Calculator = () => {
                     display("*");
                   }}
                 >
-                  *
+                  &#215;
                 </button>
               </td>
             </tr>
 
             <tr>
               <td>
-                <button>x</button>
+                <button
+                  onClick={() => {
+                    display("(");
+                  }}
+                >
+                  (
+                </button>
               </td>
               <td>
-                <button>x</button>
+                <button
+                  onClick={() => {
+                    display(")");
+                  }}
+                >
+                  )
+                </button>
               </td>
               <td>
                 <button>x</button>
